@@ -1,12 +1,12 @@
 {
-  "CONTRACT_ADDRESS": "0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
-  "SCAN_LINK": "https://polygonscan.com/token/0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
+  "CONTRACT_ADDRESS": "0x2C2820891292298C9A2dAC6489dE2A3ec74DBcBC",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x2c2820891292298c9a2dac6489de2a3ec74dbcbc",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
+    "NAME": "Rinkeby",
+    "SYMBOL": "Rinkeby",
     "ID": 137
   },
-  "NFT_NAME": "The Stripes NFT",
+  "NFT_NAME": "Jiggy Jiggy Iganuas",
   "SYMBOL": "TSNFT",
   "MAX_SUPPLY": 992,
   "WEI_COST": 4000000000000000000,
