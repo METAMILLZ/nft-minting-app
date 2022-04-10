@@ -130,10 +130,8 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
+      .mint(mintAmount)
       .send({
-        gasLimit: String(totalGasLimit),
-        to: CONFIG.CONTRACT_ADDRESS,
         from: blockchain.account,
         value: totalCostWei,
       })
@@ -162,8 +160,8 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
+    if (newMintAmount > 20) {
+      newMintAmount = 20;
     }
     setMintAmount(newMintAmount);
   };
@@ -249,13 +247,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/", "_blank");
+                  window.open("https://discord.gg/aW4GPbgJ", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                JIGGY
+                Discord
               </StyledButton>
               <StyledButton
                 style={{
@@ -298,7 +296,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  First 1000 free, then 1500 0.005 ETH Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -411,21 +409,20 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "#3f05b3",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            Elongated Punks is a collection of 2,500 NFT on the Ethereum Blockchain. Join the community and be part of the Alpha group where exclusive infomation is shared and whitelist spots are given!
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "#3f05b3",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to.
+            WAGMI
+
           </s.TextDescription>
         </s.Container>
       </s.Container>
