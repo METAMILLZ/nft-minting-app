@@ -4,15 +4,15 @@
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "Rinkeby",
-    "ID": 137
+    "ID": 4
   },
   "NFT_NAME": "Jiggy Jiggy Iganuas",
   "SYMBOL": "IGGY",
   "MAX_SUPPLY": 1350,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 4,
+  "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
   "SHOW_BACKGROUND": true
 }
